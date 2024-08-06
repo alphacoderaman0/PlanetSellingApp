@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planet shop</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&family=Montserrat+Subrayada:wght@400;700&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-weight: bold;
+            color: #fff;
+            font-family: "Montserrat Subrayada", sans-serif;
+        }
+        body{
+            background: #2c2c2c;
+        }
+        header{
+            /* padding-top: 20px; */
+            height: 70px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border-bottom: 1px solid #000;
+        }
+        nav{
+            display: flex;
+            flex-wrap: wrap;
+            gap:20px;
+        }
+        nav li{
+            list-style-type: none;
+        }
+        nav li a{
+            border: 2px solid #fff;
+            text-decoration: none;
+            padding: 0px 10px;
+            border-radius: 50px;
+        }
+        .logo{
+            border: 2px solid #fff;
+            padding: 10px 5px;
+        }
+        .signup{
+            background: #fff;
+            color: #000;
+            transition: ease-in-out;
+            transition-duration: 0.5s;
+        }
+        .signup:hover{
+            background: #000;
+            color: #fff;
+        }
+        main section{
+            margin: 0px 150px;
+            height: 90vh;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        main h1{
+            font-size: 30px;
+        }
+        main p{
+            font-size: 14px;
+            line-height: 30px;
+            margin: 30px 0px;
+        }
+        .contentLeft{
+            flex: 1;
+        }
+        .contentMid{
+            flex: 2;
+        }
+        .contentRight{
+            flex: 1;
+        }
+        .btn{
+            border:none ;
+            background: #fff;
+            color: #000;
+            padding: 10px 15px;
+            margin-top: 10px;
+            border-radius: 50px;
+            font-weight: 700;
+            transition: ease-in-out;
+            transition-duration: 0.5s;
+        }
+        .btn:hover{
+            border:none ;
+            background: #000;
+            color: #fff;
+        }
+        img{
+            display: flex;
+            justify-content: center;
+            width: 400px;
+            height: 400px;
+            filter: drop-shadow(0.35rem 0.35rem 1rem rgba(255, 255, 255, 0.5));  
+            animation: rotate 8s linear infinite; 
+        }
+        @keyframes rotate {
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+        .saturn{
+            animation: none;
+            width: 500px;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <div class="logo">logo</div>
+        <nav class="nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Offers</a></li>
+            <li><a href="#">Buy Now</a></li>
+            <li><a href="#">Sell Now</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#" class="signup">Sign UP</a></li>
+        </nav>
+    </header>
+    <main>
+        <!-- Mercury -->
+        <section>
+            <div class="contentLeft">
+                <h1>Mercury</h1>
+            </div>
+            <div class="contentMid">
+                <p>Mercury is the first planet from the Sun and the smallest in the Solar System. In English, it is named after the ancient Roman god Mercurius, god of commerce and communication, and the messenger of the gods. Mercury is classified as a terrestrial planet, with roughly the same surface gravity as Mars.</p>
+                <button class="btn">Buy Now</button>
+            </div>
+            <div class="contentRight">
+                    <img src="images/mercury.png" alt="Mercury">
+            </div>   
+        </section>
+        <!-- Earth -->
+        <section>
+            <div class="contentLeft">
+                <h1>Earth</h1>
+            </div>
+            <div class="contentMid">
+                <p>Earth is the third planet from the Sun and the only astronomical object known to harbor life. This is enabled by Earth being an ocean world, the only one in the Solar System sustaining liquid surface water. Almost all of Earth's water is contained in its global ocean, covering 70.8% of Earth's crust.</p>
+                <button class="btn">Buy Now</button>
+            </div>
+            <div class="contentRight">
+                   <img src="images/earth.png" alt="Earth">
+            </div>   
+        </section>
+        <!-- jupiter -->
+        <section>
+            <div class="contentLeft">
+                <h1>jupiter</h1>
+            </div>
+            <div class="contentMid">
+                <p>
+                    Jupiter is the fifth planet from the Sun. A gas giant, it is the largest in the Solar System. Jupiter's mass is more than two and a half times that of all the other planets in the Solar System combined and slightly less than one one-thousandth the mass of the Sun.</p>
+                <button class="btn">Buy Now</button>
+            </div>
+            <div class="contentRight">
+                    <img src="images/jupiter.png" alt="Jupiter">
+            </div>   
+        </section>
+         <!-- Mars -->
+         <section>
+            <div class="contentLeft">
+                <h1>Mars</h1>
+            </div>
+            <div class="contentMid">
+                <p>Mars is the fourth planet from the Sun. The surface of Mars is orange-red because it is covered in iron(III) oxide dust, giving it the nickname "the Red Planet". Mars is among the brightest objects in Earth's sky, and its high-contrast albedo features have made it a common subject for telescope viewing.</p>
+                <button class="btn">Buy Now</button>
+            </div>
+            <div class="contentRight">
+                    <img src="images/mars.png" alt="Mars">
+            </div>   
+        </section>
+        <!-- Neptune -->
+        <section>
+            <div class="contentLeft">
+                <h1>Neptune</h1>
+            </div>
+            <div class="contentMid">
+                <p>Neptune is the eighth and farthest known planet from the Sun. It is the fourth-largest planet in the Solar System by diameter, the third-most-massive planet, and the densest giant planet. It is 17 times the mass of Earth and slightly more massive, but denser and smaller, than fellow ice giant Uranus.</p>
+                <button class="btn">Buy Now</button>
+            </div>
+            <div class="contentRight">
+                    <img src="images/Neptune.png" alt="Neptune">
+            </div>   
+        </section>
+        <!-- saturn -->
+        <section>
+            <div class="contentLeft">
+                <h1>Saturn</h1>
+            </div>
+            <div class="contentMid">
+                <p>Saturn is the sixth planet from the Sun and the second largest in the Solar System, after Jupiter. It is a gas giant, with an average radius of about nine and a half times that of Earth. It has an eighth the average density of Earth, but is over 95 times more massive.</p>
+                <button class="btn">Buy Now</button>
+            </div>
+            <div class="contentRight">
+                    <img class="saturn" src="images/saturn.png" alt="Saturn">
+            </div>   
+        </section>
+        <!-- venus -->
+        <section>
+            <div class="contentLeft">
+                <h1>Venus</h1>
+            </div>
+            <div class="contentMid">
+                <p>Venus is the second planet from the Sun. It is a terrestrial planet and is the closest in mass and size to its orbital neighbour Earth. Venus is notable for having the densest atmosphere of the terrestrial planets, composed mostly of carbon dioxide with a thick, global sulfuric acid cloud cover.</p>
+                <button class="btn">Buy Now</button>
+            </div>
+            <div class="contentRight">
+                    <img src="images/Venus.png" alt="Venus">
+            </div>   
+        </section>
+        <!-- Uranus -->
+        <section>
+            <div class="contentLeft">
+                <h1>Uranus</h1>
+            </div>
+            <div class="contentMid">
+                <p>Uranus is the seventh planet from the Sun. It is a gaseous cyan-coloured ice giant. Most of the planet is made of water, ammonia, and methane in a supercritical phase of matter, which astronomy calls "ice" or volatiles.</p>
+                <button class="btn">Buy Now</button>
+            </div>
+            <div class="contentRight">
+                   <img src="images/Uranus.png" alt="Uranus">
+            </div>   
+        </section>
+    </main>
+</body>
+</html>
